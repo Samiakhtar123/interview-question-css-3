@@ -89,7 +89,7 @@ p:nth-child(odd){
     background-color: crimson;
 }
 p::before{
-    content:"this is my content";
+    content:"";
 }
 ::marker{
     color: crimson;
