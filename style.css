@@ -1,0 +1,110 @@
+
+.a{
+    width: 150px;
+    height: 80px;
+    background-color: yellow;
+    -ms-transform:rotate(180deg) ;
+    transform: rotate(180deg);
+    color: blue;
+}
+.b2{
+    width: 150px;
+    height: 80px;
+    background-color: yellow;
+    transform: skewX(20deg);
+    color: red;
+}
+.b{
+    width: 150px;
+    height: 80px;
+    background-color: yellow;
+    -ms-transform:skewY(20deg) ;
+    transform: skewY(20deg);
+    color: red;
+}
+.c{
+    width: 150px;
+    height: 80px;
+    background-color: yellow;
+    transform: scaleY(0.5);
+    color:chartreuse ;
+}
+.para{
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    color: cadetblue;
+
+}
+.grid-container{
+    display: grid;
+    /*grid-template-rows: auto auto auto auto;*/
+    grid-template-columns: auto auto auto auto;
+    row-gap: 20px;
+    background-color: gray;
+    color: blueviolet;
+    padding: 5px;
+    column-gap: 20px;
+}
+
+.grid-item{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+/* div p{ 
+    background-color: chartreuse;
+    animation-name: descendent selector;
+}
+
+div > p{
+    background-color: chartreuse;
+    animation-name: child selector
+}
+div + h2{
+
+    background-color: blue;
+    animation-name: adjacent sibling;
+}*/
+div ~ p{
+    background-color: blueviolet;
+    animation-name: general sibling selector;
+}
+
+a:link{
+    color: chartreuse;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: pink;
+}
+a:visited{
+    color: blue;
+}
+p:nth-child(odd){
+    background-color: crimson;
+}
+p::before{
+    content:"this is my content";
+}
+::marker{
+    color: crimson;
+}
+/*p::first-letter{
+    color: rgb(43, 211, 119);
+    font-size: 300%;
+    font-style: italic;
+}*/
+p::first-line{
+    color: rgb(43, 211, 119);
+    font-size: 300%;
+    font-style: italic;
+}
+::selection{
+    color: brown;
+    background-color: blue;
+}
